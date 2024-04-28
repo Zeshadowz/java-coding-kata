@@ -1,7 +1,7 @@
 package com.qburry.web;
 
 import com.qburry.service.CustomerService;
-import com.qburry.web.model.CustomerDTO;
+import com.qburry.web.model.Customer;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,12 +17,12 @@ public class CustomerController {
     }
 
     @GetMapping
-    public List<CustomerDTO> getCustomers() {
-        return null;
+    public List<Customer> getCustomers() {
+        return customerService.findAll();
     }
 
     @PostMapping
-    public Long createCustomer(@RequestBody CustomerDTO customerDTO) {
-        return customerService.save(customerDTO);
+    public Long createCustomer(@RequestBody Customer customer) {
+        return customerService.save(customer);
     }
 }
