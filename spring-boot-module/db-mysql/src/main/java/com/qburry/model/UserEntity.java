@@ -17,7 +17,7 @@ public class UserEntity {
     @MapsId
     @OneToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "id", nullable = false, foreignKey = @ForeignKey(name = "FK_User_Person"))
-    private PersonEntity personEntity;
+    private PersonEntity person;
 
     @Column(name = "password", nullable = false)
     private String password;
