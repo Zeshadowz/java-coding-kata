@@ -1,0 +1,15 @@
+### GET All customers
+GET {{host}}/customers
+
+### Insert customer
+POST {{host}}/customers
+Content-Type: application/json
+
+{
+  "personType": "CUSTOMER",
+  "gender": "MALE",
+  "firstname": "Obi-Wan",
+  "lastname": "Kenobi",
+  "email": "obi-wan.kenobi@email.com",
+  "phone": "+49 1627 8238 37"
+}
