@@ -1,6 +1,6 @@
-package com.qburry.repository;
+package com.qburry.domain.repository;
 
-import com.qburry.model.CustomerEntity;
+import com.qburry.domain.model.CustomerEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CustomerRepository extends JpaRepository<CustomerEntity, Long> {

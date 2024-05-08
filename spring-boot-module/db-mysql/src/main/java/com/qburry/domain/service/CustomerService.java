@@ -1,10 +1,10 @@
-package com.qburry.service;
+package com.qburry.domain.service;
 
-import com.qburry.model.CustomerEntity;
-import com.qburry.model.PersonEntity;
-import com.qburry.repository.CustomerRepository;
-import com.qburry.service.mapper.CustomerMapper;
-import com.qburry.service.mapper.PersonMapper;
+import com.qburry.domain.model.CustomerEntity;
+import com.qburry.domain.model.PersonEntity;
+import com.qburry.domain.repository.CustomerRepository;
+import com.qburry.domain.service.mapper.CustomerMapper;
+import com.qburry.domain.service.mapper.PersonMapper;
 import com.qburry.web.model.Customer;
 import org.springframework.stereotype.Service;
 

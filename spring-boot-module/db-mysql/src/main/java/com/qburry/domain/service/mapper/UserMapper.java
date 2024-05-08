@@ -1,6 +1,6 @@
-package com.qburry.service.mapper;
+package com.qburry.domain.service.mapper;
 
-import com.qburry.model.UserEntity;
+import com.qburry.domain.model.UserEntity;
 import com.qburry.web.model.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

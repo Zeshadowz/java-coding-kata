@@ -1,8 +1,8 @@
-package com.qburry.service;
+package com.qburry.domain.service;
 
-import com.qburry.model.UserEntity;
-import com.qburry.repository.UserRepository;
-import com.qburry.service.mapper.UserMapper;
+import com.qburry.domain.model.UserEntity;
+import com.qburry.domain.repository.UserRepository;
+import com.qburry.domain.service.mapper.UserMapper;
 import com.qburry.web.model.User;
 import org.springframework.stereotype.Service;
 

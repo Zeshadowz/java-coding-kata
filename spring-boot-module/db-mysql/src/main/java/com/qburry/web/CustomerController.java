@@ -1,7 +1,9 @@
 package com.qburry.web;
 
-import com.qburry.service.CustomerService;
+import com.qburry.domain.service.CustomerService;
+import com.qburry.domain.usecase.CustomerUsecase;
 import com.qburry.web.model.Customer;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,9 +13,13 @@ import java.util.List;
 public class CustomerController {
 
     private final CustomerService customerService;
+    private final CustomerUsecase customerUsecase;
 
-    public CustomerController(CustomerService customerService) {
+    public CustomerController(
+            CustomerService customerService,
+            @Qualifier("decorator") CustomerUsecase customerUsecase) {
         this.customerService = customerService;
+        this.customerUsecase = customerUsecase;
     }
 
     @GetMapping
@@ -23,6 +29,6 @@ public class CustomerController {
 
     @PostMapping
     public Long createCustomer(@RequestBody Customer customer) {
-        return customerService.save(customer);
+        return customerUsecase.insertCustomer(customer);
     }
 }

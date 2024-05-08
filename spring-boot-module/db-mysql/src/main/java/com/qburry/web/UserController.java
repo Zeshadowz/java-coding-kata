@@ -1,6 +1,6 @@
 package com.qburry.web;
 
-import com.qburry.service.UserService;
+import com.qburry.domain.service.UserService;
 import com.qburry.web.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;

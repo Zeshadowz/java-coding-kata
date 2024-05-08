@@ -1,4 +1,4 @@
-package com.qburry.model;
+package com.qburry.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
